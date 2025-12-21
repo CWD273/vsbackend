@@ -17,9 +17,8 @@
   ],
   "functions": {
     "api/s.json.js": {
-      "runtime": "nodejs18.x",
+      "runtime": "nodejs@18.x",
       "memory": 128,
       "maxDuration": 5
     }
   }
-}
