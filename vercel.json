@@ -1,25 +1,25 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/index.json",
-      "dest": "/api/index.json"
+      "source": "/s.json",
+      "destination": "/api/s.json"
     }
   ],
-  "functions": {
-    "api/index.json.js": {
-      "runtime": "nodejs18.x",
-      "memory": 128,
-      "maxDuration": 5
-    }
-  },
   "headers": [
     {
-      "source": "/index.json",
+      "source": "/s.json",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=60" },
         { "key": "Content-Type", "value": "application/json" }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/s.json.js": {
+      "runtime": "nodejs18.x",
+      "memory": 128,
+      "maxDuration": 5
+    }
+  }
 }
