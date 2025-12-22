@@ -14,12 +14,5 @@
         { "key": "Content-Type", "value": "application/json" }
       ]
     }
-  ],
-  "functions": {
-    "api/s.json.js": {
-      "runtime": "nodejs@18.x",
-      "memory": 128,
-      "maxDuration": 5
-    }
-  }
+  ]
 }
