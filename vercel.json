@@ -2,9 +2,14 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/s.json",
-      "destination": "/api/s.json"
-    }
+  "version": 2,
+  "rewrites": [
+    { "source": "/", "destination": "/api/index.json" },
+    { "source": "/show", "destination": "/api/show" },
+    { "source": "/movie", "destination": "/api/movie" },
+    { "source": "/live", "destination": "/api/live" }
+  ]
+}
   ],
   "headers": [
     {
